@@ -1,13 +1,27 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { Provider } from 'react-redux';
+import reduxStore from './reduxStore/reduxStore';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
   <React.StrictMode>
+
+    
+    <Provider store={reduxStore}>
+     <BrowserRouter>
     <App />
+    </BrowserRouter>
+   
+    </Provider>
+  
+  
   </React.StrictMode>
 );
 
