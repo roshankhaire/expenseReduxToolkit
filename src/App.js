@@ -11,6 +11,7 @@ import ExpenseTracker from "./components/Expense/ExpenseTracker"
 import GetExpenseTracker from './components/Expense/GetExpenseTracker';
 import EditExpenseTracker from './components/Expense/EditExpenseTracker';
 import Premium from './components/Expense/Premium';
+import Greeting from './components/Greeting';
 function App() {
   return (
     <>
@@ -29,7 +30,7 @@ function App() {
     </Routes>
     
     
- 
+ <Greeting/>
 
    </>
   );
