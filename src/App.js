@@ -12,10 +12,11 @@ import GetExpenseTracker from './components/Expense/GetExpenseTracker';
 import EditExpenseTracker from './components/Expense/EditExpenseTracker';
 import Premium from './components/Expense/Premium';
 import Greeting from './components/Greeting';
+import Async from './components/Async';
 function App() {
   return (
     <>
-     
+   
      <Nbar/>
     <Routes>
       <Route  exact path="/welcome" element={<Welcome/>}/>
@@ -31,6 +32,7 @@ function App() {
     
     
  <Greeting/>
+ <Async/>
 
    </>
   );
